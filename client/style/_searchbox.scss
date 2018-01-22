@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'mixins';
+
+.search-box, .search-button {
+  font-family: $display-family;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  color: $primary;
+  border: 1px solid #B6B6B6;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-left {
+  width: 100%;
+}
+
+.search-container {
+  margin-left: 36px;// -6px;
+}
+
+.search-button {
+  left: -1px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: $accent-color;
+  color: $primary-invert;
+  text-transform: uppercase;
+  padding: 0 1.4em 0;
+
+  @include transition(0.17s);
+}
+
+.search-button:hover {
+  background-color: lighten($accent-color, 5%);
+}
+
+.search-button:active {
+  background-color: darken($accent-color, 5%);
+}
+
+body, html {
+  width: 100%;
+}
+
+.search-box {
+  line-height: 1em;
+  border-radius: 4px 0px 0px 4px;
+  -webkit-appearance: none;
+  font-family: $display-family;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 340px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+.search-box::-webkit-input-placeholder {
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.search-box:-moz-placeholder { 
+  text-transform: uppercase;
+}
+
+.search-box::-moz-placeholder {  
+  text-transform: uppercase;
+}
+
+.search-box:-ms-input-placeholder { 
+  text-transform: uppercase;
+}

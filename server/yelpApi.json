@@ -1,0 +1,9 @@
+{
+  "oauth": "https://api.yelp.com/oauth2/token",
+  "endpoint": "https://api.yelp.com/v3",
+  "path": {
+    "business": "/businesses",
+    "search": "/businesses/search",
+    "autocomplete": "/autocomplete"
+  }
+}
